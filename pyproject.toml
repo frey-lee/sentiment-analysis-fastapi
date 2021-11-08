@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sent-fast-api"
+version = "0.1.0"
+description = ""
+authors = ["Jeffrey Lee <jeffreylee@dsaid.gov.sg>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spacy = "^3.2.0"
+spacytextblob = "^3.0.1"
+pydantic = "^1.8.2"
+fastapi = "^0.70.0"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dependencies.en_core_web_sm]
+url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0.tar.gz"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^3.0.0"
+pre-commit = "^2.15.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
