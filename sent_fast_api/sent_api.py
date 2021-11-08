@@ -1,5 +1,6 @@
 import uvicorn
 from fastapi import FastAPI
+
 from sent_fast_api.model import SentimentModel, SentimentQueryModel
 
 app = FastAPI()
